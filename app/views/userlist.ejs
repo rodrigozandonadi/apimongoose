@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <title><%= title %></title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+    </head>
+    <body>
+        <h1><%= title %></h1>
+        <ul>
+            <% userlist.forEach(function(user){ %>
+                <li><a href="mailto:<%= user.email %>"><%= user.username %></a><br />Id: <%= user._id %></li> 
+            <%})%>
+        </ul>
+    </body>
+</html>
